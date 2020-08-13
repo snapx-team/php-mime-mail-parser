@@ -3,6 +3,9 @@ namespace Tests\PhpMimeMailParser;
 
 use PhpMimeMailParser\Bou;
 
+/**
+ * @covers \PhpMimeMailParser\Bou
+ */
 class BouTest extends TestCase
 {
     public function testOne(): void
