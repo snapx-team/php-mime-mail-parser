@@ -95,7 +95,6 @@ final class Parser implements ParserInterface
 
         $parser = new self($config);
 
-        // Adding a trailing line break as a workaround for this bug in PHP mailparse: https://bugs.php.net/bug.php?id=75923
         if (substr($data, -1) != "\n") {
             $data .= PHP_EOL;
             $parser->linebreakAdded = true;
